@@ -1,0 +1,55 @@
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1160px;
+}
+
+.titulo {
+  background: var(--cor-c11);
+  padding: 60px 0;
+}
+.titulo h2 {
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.botao-secundario,
+.botao-primario {
+  display: inline-block;
+  font: 600 1.125rem/1.3 "Roboto";
+  text-transform: uppercase;
+  white-space: nowrap;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  padding: 16px 32px;
+  transition: background 0.2s;
+  max-width: max-content;
+}
+
+.botao-primario {
+  background: linear-gradient(#ffbf00, #f2a60c);
+  color: var(--cor-p5);
+}
+.botao-primario:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
+.botao-secundario {
+  background: var(--cor-c10);
+  color: var(--cor-c4);
+}
+.botao-secundario:hover {
+  background: var(--cor-c11);
+}
+
+@media (max-width: 600px) {
+  .botao-secundario,
+  .botao-primario {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+}

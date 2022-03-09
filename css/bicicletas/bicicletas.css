@@ -1,0 +1,109 @@
+.nossas-bicicletas {
+  padding: 120px 0;
+}
+
+.bicicletas-lista .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+}
+.bicicletas-lista > li:nth-child(even) {
+  background: linear-gradient(90deg, var(--cor-c0) 20%, var(--cor-c11) 20%);
+  padding: 60px 0;
+}
+.bicicletas-lista > li:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.nossas-bicicletas .foto {
+  position: relative;
+  max-width: max-content;
+}
+
+.nossas-bicicletas .preco {
+  position: absolute;
+  background: var(--cor-c12);
+  border-radius: 5px 0 0 5px;
+  padding: 8px 16px 8px 8px;
+  top: 20px;
+  right: 0;
+}
+
+.bicicletas-info {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.bicicletas-info h3 {
+  grid-column: 1 / -1;
+  margin-bottom: 20px;
+}
+.bicicletas-info h3::before {
+  content: "";
+  display: block;
+  background: var(--cor-p1);
+  margin-bottom: 8px;
+  width: 12px;
+  height: 8px;
+}
+
+.bicicletas-info p {
+  grid-column: 1 / -1;
+  margin-bottom: 32px;
+}
+
+.bicicletas-info .caracteristicas li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.bicicletas-info .caracteristicas li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.bicicletas-info a {
+  place-self: end;
+}
+.bicicletas-info a::after {
+  content: "";
+  display: inline-block;
+  background: url("../../img/icones/seta.svg") no-repeat;
+  transition: transform 0.2s;
+  margin-left: 12px;
+  width: 18px;
+  height: 10px;
+}
+.bicicletas-info a:hover::after {
+  transform: translateX(4px);
+}
+
+@media (max-width: 900px) {
+  .nossas-bicicletas {
+    padding: 60px 0;
+  }
+
+  .bicicletas-lista .container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .bicicletas-lista > li:nth-child(even) {
+    background: var(--cor-c11);
+    /* padding: 0; */
+  }
+
+  .bicicletas-info {
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 400px) {
+  .bicicletas-info .caracteristicas {
+    margin-bottom: 32px;
+  }
+
+  .bicicletas-info a {
+    grid-column: 1;
+    justify-self: start;
+  }
+}
