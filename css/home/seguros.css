@@ -2,7 +2,8 @@
   padding-top: 0;
 }
 .seguros {
-  background: var(--cor-c11);
+  background: var(--cor-c11) url("../../img/dec/bottom-left.svg") no-repeat
+    bottom 40px left 40px;
   padding: 60px 0 120px;
 }
 

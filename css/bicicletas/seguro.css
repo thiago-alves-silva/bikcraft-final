@@ -11,6 +11,7 @@
 }
 
 .seguro .info {
+  background: url("../../img/dec/top-right.svg") no-repeat top 160px right 40px;
   padding: 180px 0;
 }
 
@@ -39,8 +40,13 @@
   }
 
   .seguro .info {
+    background-position: top 60px right 0;
     padding: 60px 0;
-    max-width: 50ch;
+  }
+
+  .seguro .info p,
+  .seguro .info h2 {
+    max-width: 500px;
   }
 
   .seguro .foto {

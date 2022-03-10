@@ -17,7 +17,8 @@
   display: flex;
   flex-direction: column;
   gap: 60px;
-  background: var(--cor-c12);
+  background: var(--cor-c12) url("../../img/dec/bottom-left.svg") no-repeat
+    bottom 40px left 40px;
   border-radius: 5px 0 0 5px;
   padding: 60px;
 }
@@ -51,12 +52,19 @@
   gap: 32px;
 }
 
+.contato .form {
+  background: url("../../img/dec/bottom-left.svg") no-repeat top 20px right 30px,
+    url("../../img/dec/bottom-right.svg") no-repeat bottom 20px right 30px;
+  background-color: var(--cor-c0);
+}
+
 @media (max-width: 900px) {
   .contato .container > div {
     grid-template-columns: 1fr;
   }
 
   .contato .contato-info {
+    background-image: unset;
     border-radius: 5px 5px 0 0;
   }
 
@@ -89,5 +97,9 @@
   }
   .contato-info .info li:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  .contato .form {
+    background-image: unset;
   }
 }

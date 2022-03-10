@@ -7,6 +7,7 @@
   <title>Bikcraft - Bicicletas Elétricas</title>
   <meta name="description"
         content="Projeto final de um  site de bicicletas elétricas do curso de HTML e CSS para Iniciantes da Origamid.">
+  <link rel="preload" href="css/style.css" as="style">
   <link rel="stylesheet" href="css/style.css">
   <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,9 +41,10 @@
             velocidade com a Bikcraft.</p>
           <a href="bicicletas.html" class="botao-primario">Selecione a sua</a>
         </div>
-        <div class="foto">
+        <picture class="foto">
+          <source media="(max-width: 800px)" srcset="img/bicicletas/nimbus.jpg">
           <img src="img/bicicletas/nimbus-home.jpg" alt="Magic Might" width="460" height="520">
-        </div>
+        </picture>
       </div>
     </section>
     <article class="bicicletas container" aria-label="Bicicletas">
@@ -117,7 +119,7 @@
     </section>
     <section class="depoimento" aria-label="Depoimento">
       <div class="foto">
-        <img src="img/fotos/depoimento.jpg" alt="">
+        <img src="img/fotos/depoimento.jpg" alt="" width="780" height="680">
       </div>
       <div class="depoimento-info">
         <blockquote>
@@ -170,7 +172,7 @@
     <div class="container">
       <img src="img/bikcraft.svg" alt="Bikcraft" class="logo" width="136" height="32">
       <div class="contato-info font-2-m cor-c5">
-        <h3 class="font-2-l-b cor-c0">Contato</h3>
+        <span class="font-2-l-b cor-c0">Contato</span>
         <a href="tel:+5511999999999">+55 11 99999-9999</a>
         <a href="mailto:contato@mail.com">contato@mail.com</a>
         <span class="endereco">Rua Ali Perto, 42 - Centro <br>São Paulo - SP</span>
@@ -181,7 +183,7 @@
         </div>
       </div>
       <div class="informacoes font-2-m cor-c5">
-        <h3 class="font-2-l-b cor-c0">Informações</h3>
+        <span class="font-2-l-b cor-c0">Informações</span>
         <a href="bicicletas.html">Bicicletas</a>
         <a href="seguros.html">Seguros</a>
         <a href="contato.html">Contatos</a>

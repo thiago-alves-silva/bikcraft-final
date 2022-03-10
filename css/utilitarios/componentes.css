@@ -10,6 +10,9 @@
   background: var(--cor-c11);
   padding: 60px 0;
 }
+.titulo .container {
+  background: url("../../img/dec/top-right.svg") no-repeat top right 30px;
+}
 .titulo h2 {
   text-transform: uppercase;
   margin-bottom: 8px;
