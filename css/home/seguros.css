@@ -47,17 +47,17 @@
   text-transform: uppercase;
 }
 
-.seguros-lista .vantagens {
+.seguros-lista .seguro-vantagens {
   grid-column: 1 / -1;
   margin-bottom: 32px;
 }
-.seguros-lista .vantagens li {
+.seguros-lista .seguro-vantagens li {
   position: relative;
   display: flex;
   align-items: center;
   white-space: nowrap;
 }
-.seguros-lista .vantagens li::before {
+.seguros-lista .seguro-vantagens li::before {
   content: "";
   position: absolute;
   background: url("../../img/icones/lista.svg") no-repeat center;
@@ -65,7 +65,7 @@
   width: 13px;
   height: 9px;
 }
-.seguros-lista .vantagens li + li {
+.seguros-lista .seguro-vantagens li + li {
   margin-top: 20px;
 }
 
@@ -95,7 +95,7 @@
     text-align: left;
   }
 
-  .seguros-lista .vantagens li {
+  .seguros-lista .seguro-vantagens li {
     white-space: initial;
   }
 }

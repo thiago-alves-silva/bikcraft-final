@@ -7,7 +7,7 @@
   margin-bottom: 60px;
 }
 
-.perguntas li:nth-child(odd) {
+.perguntas details:nth-child(odd) {
   background: var(--cor-c1);
   border-radius: 5px;
 }
@@ -19,7 +19,6 @@
   gap: 8px;
   list-style: none;
   cursor: pointer;
-  transition: 0.3s;
   padding: 20px;
 }
 .perguntas summary::before {
@@ -39,6 +38,7 @@
   width: 14px;
   height: 6px;
 }
+
 .perguntas details[open] summary {
   margin-bottom: 16px;
 }
@@ -47,11 +47,10 @@
 }
 
 .perguntas p {
-  transition: 0.5s;
   padding: 0 40px 40px;
 }
 .perguntas details[open] p {
-  animation: aparecer 1s;
+  animation: aparecer 1s forwards;
 }
 
 @keyframes aparecer {

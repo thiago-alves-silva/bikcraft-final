@@ -39,15 +39,15 @@
       <form action="" class="container">
         <div class="opcoes">
           <span class="form-titulo font-1-xs cor-c5">BIKCRAFT OU SEGURO?</span>
-          <input type="radio" name="tipo" id="radio-bikcraft" checked>
+          <input type="radio" name="tipo" value="bikcraft" id="radio-bikcraft" checked>
           <label for="radio-bikcraft" class="font-1-s cor-c4 form-radio">Bikcraft</label>
-          <input type="radio" name="tipo" id="radio-seguro">
+          <input type="radio" name="tipo" value="seguro" id="radio-seguro">
           <label for="radio-seguro" class="font-1-s cor-c4 form-radio">Seguro</label>
 
           <div class="opcao" id="opcao-bikcraft">
             <span class="form-titulo font-1-xs cor-c5">Escolha a sua:</span>
 
-            <input type="radio" name="bikcraft" id="nimbus">
+            <input type="radio" name="produto" value="nimbus" id="nimbus">
             <label for="nimbus" class="font-1-s cor-c4 form-radio">Nimbus Stark
               <span class="preco">R$ 4999</span>
             </label>
@@ -73,7 +73,7 @@
               <img src="img/bicicletas/nimbus.jpg" alt="Nimbus Stark" width="560" height="340">
             </div>
 
-            <input type="radio" name="bikcraft" id="magic">
+            <input type="radio" name="produto" value="magic" id="magic">
             <label for="magic" class="font-1-s cor-c4 form-radio">Magic Might
               <span class="preco">R$ 2499</span>
             </label>
@@ -99,7 +99,7 @@
               <img src="img/bicicletas/magic.jpg" alt="Magic Might" width="560" height="340">
             </div>
 
-            <input type="radio" name="bikcraft" id="nebula">
+            <input type="radio" name="produto" value="nebula" id="nebula">
             <label for="nebula" class="font-1-s cor-c4 form-radio">Nebula Cosmic
               <span class="preco">R$ 3999</span>
             </label>
@@ -127,9 +127,9 @@
           </div>
           <div class="opcao" id="opcao-seguro">
             <span class="form-titulo font-1-xs cor-c5">Escolha o plano:</span>
-            <input type="radio" name="plano" id="ouro">
+            <input type="radio" name="produto" value="ouro" id="ouro">
             <label for="ouro" class="font-1-s cor-c4 form-radio">Ouro</label>
-            <input type="radio" name="plano" id="prata">
+            <input type="radio" name="produto" value="prata" id="prata">
             <label for="prata" class="font-1-s cor-c4 form-radio">Prata</label>
           </div>
         </div>
@@ -221,6 +221,7 @@
       <span class="copyright font-2-m cor-c9 cor-c6">Bikcraft © Alguns Direitos Reservados.</span>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

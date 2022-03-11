@@ -15,8 +15,15 @@
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-.bicicleta .galeria img:first-child {
+
+.bicicleta .galeria img {
+  cursor: pointer;
+}
+
+.bicicleta .galeria img.ativo {
   grid-column: 1 / -1;
+  order: -1;
+  cursor: default;
   width: 100%;
 }
 

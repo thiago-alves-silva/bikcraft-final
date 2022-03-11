@@ -43,20 +43,20 @@
             <span class="font-1-xs cor-c6">Mensal</span>
           </span>
 
-          <ul class="vantagens">
+          <ul class="seguro-vantagens">
             <li class="font-1-m cor-c0">Duas trocas por ano</li>
             <li class="font-1-m cor-c0">Assistência técnica</li>
             <li class="font-1-m cor-c0">Suporte 08h às 18h</li>
             <li class="font-1-m cor-c0">Cobertura estadual</li>
           </ul>
-          <a href="orcamento.html" class="botao-secundario">Inscreva-se</a>
+          <a href="orcamento.html?tipo=seguro&produto=prata" class="botao-secundario">Inscreva-se</a>
         </li>
         <li>
           <h3 class="font-1-xl cor-p1">Ouro</h3>
           <span class="preco font-1-xl cor-c0">R$ 299
             <span class="font-1-xs cor-c6">Mensal</span>
           </span>
-          <ul class="vantagens">
+          <ul class="seguro-vantagens">
             <li class="font-1-m cor-c0">Duas trocas por ano</li>
             <li class="font-1-m cor-c0">Assistência especial</li>
             <li class="font-1-m cor-c0">Suporte 24h</li>
@@ -64,7 +64,7 @@
             <li class="font-1-m cor-c0">Desconto em parceiros</li>
             <li class="font-1-m cor-c0">Acesso ao clube Bikcraft</li>
           </ul>
-          <a href="orcamento.html" class="botao-primario">Inscreva-se</a>
+          <a href="orcamento.html?tipo=seguro&produto=ouro" class="botao-primario">Inscreva-se</a>
         </li>
       </ul>
     </article>
@@ -113,63 +113,58 @@
     </article>
     <section class="perguntas container">
       <h2 class="font-1-xxl">perguntas frequentes<span>.</span></h2>
-      <ul class="font-2-m cor-c9">
-        <li>
-          <details>
-            <summary class="font-1-m-b cor-c12">Qual forma de pagamento vocês aceitam?</summary>
-            <p>Aceitamos cartões de crédito com as bandeiras: Visa, MaterCard, Elo e American Express. Para pagamento à
-              vista também aceitamos PIX e boleto através do PagSeguro.</p>
-          </details>
-        </li>
-        <li>
-          <details>
-            <summary class="font-1-m-b cor-c12">Como posso entrar em contato?</summary>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, suscipit? Officiis culpa accusamus
-              itaque. Sequi ipsa numquam culpa, maxime eligendi eum quaerat! Fuga voluptatibus voluptates ut consequatur
-              impedit praesentium consectetur.</p>
-          </details>
-        </li>
-        <li>
-          <details>
-            <summary class="font-1-m-b cor-c12">Vocês possuem algum desconto?</summary>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, similique! Minus similique fuga
-              assumenda consectetur sequi dolores dicta, nisi mollitia in, quasi atque, hic labore harum. Reiciendis
-              accusamus quam alias.</p>
-          </details>
-        </li>
-        <li>
-          <details>
-            <summary class="font-1-m-b cor-c12">Qual a garantia que possuem?</summary>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, similique! Minus similique fuga
-              assumenda consectetur sequi dolores dicta, nisi mollitia in, quasi atque, hic labore harum. Reiciendis
-              accusamus quam alias.</p>
-          </details>
-        </li>
-        <li>
-          <details>
-            <summary class="font-1-m-b cor-c12">Posso parcelar no boleto?</summary>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, similique! Minus similique fuga
-              assumenda consectetur sequi dolores dicta, nisi mollitia in, quasi atque, hic labore harum. Reiciendis
-              accusamus quam alias.</p>
-          </details>
-        </li>
-        <li>
-          <details>
-            <summary class="font-1-m-b cor-c12">Quantas trocas posso fazer ao ano?</summary>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, similique! Minus similique fuga
-              assumenda consectetur sequi dolores dicta, nisi mollitia in, quasi atque, hic labore harum. Reiciendis
-              accusamus quam alias.</p>
-          </details>
-        </li>
-        <li>
-          <details>
-            <summary class="font-1-m-b cor-c12">Qual Bikcraft devo escolher para o meu tamanho?</summary>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, similique! Minus similique fuga
-              assumenda consectetur sequi dolores dicta, nisi mollitia in, quasi atque, hic labore harum. Reiciendis
-              accusamus quam alias.</p>
-          </details>
-        </li>
-      </ul>
+      <div class="font-2-m cor-c9">
+        <details>
+          <summary class="font-1-m-b cor-c12" aria-controls="resposta-1">Qual forma de pagamento vocês aceitam?
+          </summary>
+          <p id="resposta-1">Aceitamos cartões de crédito com as bandeiras: Visa, MaterCard, Elo e American Express.
+            Para pagamento à
+            vista também aceitamos PIX e boleto através do PagSeguro.</p>
+        </details>
+        <details>
+          <summary class="font-1-m-b cor-c12" aria-controls="resposta-2">Como posso entrar em contato?</summary>
+          <p id="resposta-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, suscipit? Officiis culpa
+            accusamus
+            itaque. Sequi ipsa numquam culpa, maxime eligendi eum quaerat! Fuga voluptatibus voluptates ut consequatur
+            impedit praesentium consectetur.</p>
+        </details>
+        <details>
+          <summary class="font-1-m-b cor-c12" aria-controls="resposta-3">Vocês possuem algum desconto?</summary>
+          <p id="resposta-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, similique! Minus
+            similique fuga
+            assumenda consectetur sequi dolores dicta, nisi mollitia in, quasi atque, hic labore harum. Reiciendis
+            accusamus quam alias.</p>
+        </details>
+        <details>
+          <summary class="font-1-m-b cor-c12" aria-controls="resposta-4">Qual a garantia que possuem?</summary>
+          <p id="resposta-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, similique! Minus
+            similique fuga
+            assumenda consectetur sequi dolores dicta, nisi mollitia in, quasi atque, hic labore harum. Reiciendis
+            accusamus quam alias.</p>
+        </details>
+        <details>
+          <summary class="font-1-m-b cor-c12" aria-controls="resposta-5">Posso parcelar no boleto?</summary>
+          <p id="resposta-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, similique! Minus
+            similique fuga
+            assumenda consectetur sequi dolores dicta, nisi mollitia in, quasi atque, hic labore harum. Reiciendis
+            accusamus quam alias.</p>
+        </details>
+        <details>
+          <summary class="font-1-m-b cor-c12" aria-controls="resposta-6">Quantas trocas posso fazer ao ano?</summary>
+          <p id="resposta-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, similique! Minus
+            similique fuga
+            assumenda consectetur sequi dolores dicta, nisi mollitia in, quasi atque, hic labore harum. Reiciendis
+            accusamus quam alias.</p>
+        </details>
+        <details>
+          <summary class="font-1-m-b cor-c12" aria-controls="resposta-7">Qual Bikcraft devo escolher para o meu tamanho?
+          </summary>
+          <p id="resposta-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, similique! Minus
+            similique fuga
+            assumenda consectetur sequi dolores dicta, nisi mollitia in, quasi atque, hic labore harum. Reiciendis
+            accusamus quam alias.</p>
+        </details>
+      </div>
     </section>
   </main>
   <footer class="footer">
@@ -196,6 +191,7 @@
       <span class="copyright font-2-m cor-c6">Bikcraft © Alguns Direitos Reservados.</span>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
