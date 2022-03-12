@@ -1,0 +1,3 @@
+*.fig
+/css/*.css
+!style.min.css
